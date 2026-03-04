@@ -1,0 +1,98 @@
+{
+  "projectType": "saas",
+  "projectName": "Kurt's Cykel Shop",
+  "projectDescription": "A comprehensive bicycle shop management system with inventory tracking, service orders, customer management, and sales analytics.",
+  "theme": "linden",
+  "primaryColor": "#1E88E5",
+  "lightColor": "#E3F2FD",
+  "darkColor": "#0D47A1",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/inventory-management",
+              "features/service-orders",
+              "features/customer-management",
+              "features/sales-tracking",
+              "features/user-roles"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/environment-variables",
+              "deployment/database-setup"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "mobile/overview",
+              "mobile/setup",
+              "mobile/features"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/authentication/overview",
+              "api/authentication/login",
+              "api/authentication/logout",
+              "api/authentication/tokens"
+            ]
+          },
+          {
+            "group": "Database Schema",
+            "pages": [
+              "api/database/overview",
+              "api/database/users",
+              "api/database/customers",
+              "api/database/inventory",
+              "api/database/service-orders",
+              "api/database/sales"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Inventory management with barcode support",
+    "Service order tracking and assignment",
+    "Customer relationship management",
+    "Sales logging and analytics",
+    "Role-based access control",
+    "Mobile app for on-the-go management",
+    "Docker-based deployment"
+  ],
+  "publicApiSurface": [
+    "POST /login",
+    "POST /logout",
+    "POST /accessToken",
+    "GET /refreshToken",
+    "User model with roles and permissions",
+    "Item model with inventory tracking",
+    "ServiceOrder model with customer assignment",
+    "Customer model with service history",
+    "SaleLog model for analytics",
+    "InventoryTransaction model for stock movements"
+  ]
+}
